@@ -57,3 +57,4 @@ class AuthSerializer(serializers.Serializer):
         if username and phone:
             raise ValidationError('用户名和手机号只能传一个')
         return value
+

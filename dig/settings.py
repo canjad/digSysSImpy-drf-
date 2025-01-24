@@ -106,14 +106,21 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+#
+# TIME_ZONE = 'UTC'
+#
+# USE_I18N = True
+#
+# USE_TZ = True
+LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
-USE_TZ = True
-
+USE_L10N = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
@@ -128,3 +135,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 APPEND_SLASH = False
+
+REST_FRAMEWORK = {
+    # 版本配置
+    "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.QueryParameterVersioning",
+    "DEFAULT_VERSION": "v1",
+    "ALLOWED_VERSIONS": ["v1"],
+    "VERSION_PARAM": "version",
+    # # 认证配置
+    "DEFAULT_AUTHENTICATION_CLASSES": ["api.extension.auth.TokenAuthentication", ],
+    "UNAUTHENTICATED_USER": lambda: None,
+    "UNAUTHENTICATED_TOKEN": lambda: None,
+}

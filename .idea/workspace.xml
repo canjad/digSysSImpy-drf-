@@ -4,36 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9caa8a6e-e0f8-47ad-92a3-cb07816dbc72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dig.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/extension/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/extension/mixins.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/extension/return_code.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/serializers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/serializers/accout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/views/accout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dig/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dig/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dig/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dig/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dig/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+    <list default="true" id="9caa8a6e-e0f8-47ad-92a3-cb07816dbc72" name="Changes" comment="achieve the auth and login">
+      <change afterPath="$PROJECT_DIR$/api/extension/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/extension/return_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/extension/return_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/serializers/accout.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers/accout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views/accout.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/accout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dig/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dig/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "canjad"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/canjad/digSysSImpy-drf-.git",
+    "accountId": "83bbb978-9983-475b-afa8-abcca341d5ae"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -62,22 +51,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.dig.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.dig.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="dig" type="Python.DjangoServer" factoryName="Django server">
       <module name="dig" />
@@ -124,10 +113,24 @@
       <workItem from="1737607503784" duration="1391000" />
       <workItem from="1737609761311" duration="44000" />
       <workItem from="1737609812984" duration="7284000" />
+      <workItem from="1737682990058" duration="1577000" />
     </task>
+    <task id="LOCAL-00001" summary="achieve the auth and login">
+      <option name="closed" value="true" />
+      <created>1737683226328</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737683226328</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="achieve the auth and login" />
+    <option name="LAST_COMMIT_MESSAGE" value="achieve the auth and login" />
   </component>
 </project>
